@@ -1,5 +1,3 @@
-import Layout from "../components/layout/layout"
-
 interface TaskParam {
   children: String
 }
@@ -21,10 +19,9 @@ function Column(prop: ColumnParam) {
   )
 }
 
- export default function MainPage() {
+ export function Board() {
+  let columns = ["b", "a"]
   return (
-    <Layout>
-      <Column name="a">{["sd", "sd"]}</Column>
-    </Layout>
+    <Column name="a">{["sd", "sd"]}</Column>
   )
 }
